@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* ANIMACION DE CARRUSEL PARA LAS NORMAS */
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* Se desplaza un 50% porque duplicamos el contenido */
+}
+
+/* Creamos la clase para el carrusel animado */
+.animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 40s linear infinite;
+}
+
+/* Opcional: Pausa el movimiento cuando el usuario pasa el cursor por encima */
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
