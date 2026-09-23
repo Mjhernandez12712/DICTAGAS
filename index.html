@@ -50,6 +50,7 @@
               <div class="flex w-full justify-between">
                 <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
                 <a href="#servicios" class="rounded-md px-3 py-2 text-sm font-medium text-blue-950">Servicios</a>
+                <a href="#certificaciones" class="rounded-md px-3 py-2 text-sm font-medium text-blue-950">Certificaciones</a>
                 <a href="#porqueElegirnos" class="rounded-md px-3 py-2 text-sm font-medium text-blue-950">Por
                   que elegirnos</a>
                 <a href="#proceso" class="rounded-md px-3 py-2 text-sm font-medium text-blue-950">Proceso</a>
@@ -65,6 +66,7 @@
         <div class="space-y-1 px-2 pt-2 pb-3 text-center">
           <!-- Current: "bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
           <a href="#servicios" class="block rounded-md px-3 py-2 text-base font-medium text-blue-950 ">Servicios</a>
+          <a href="#certificaciones" class="block rounded-md px-3 py-2 text-base font-medium text-blue-950">Certificaciones</a>
           <a href="#porqueElegirnos" class="block rounded-md px-3 py-2 text-base font-medium text-blue-950">Por
             que elegirnos</a>
           <a href="#proceso" class="block rounded-md px-3 py-2 text-base font-medium text-blue-950">Proceso</a>
@@ -77,7 +79,7 @@
 
 
   <main>
-    <section max-w2xl>
+    <section class="reveal">
       <!-- ABAJO DEL ENCABEZADO INFO PRINCIPAL -->
       <div class="h-[420px]  overflow-hidden">
         <img src="/public/FOTO2.webp" alt="" class="w-full h-full object-cover object-center" />
@@ -85,7 +87,7 @@
     </section>
 
     <!-- PRIMER SECCION NORMAS BAJO LAS QUE TRABAJA -->
-    <section class="bg-blue-950 py-8 border-b border-gray-200 overflow-hidden">
+    <section class="bg-blue-950 py-8 border-b border-gray-200 overflow-hidden reveal is-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 opacity-60">
         <p class="text-center text-sm font-black text-white uppercase tracking-widest mb-6">
           Inspecciones realizadas bajo las Normas Oficiales Mexicanas
@@ -122,7 +124,7 @@
                 NATURAL
               </div>
               <div class="text-xl font-black text-white flex items-center gap-2">
-                <i class="fas fa-file-contract text-3xl"></i> NOM-013SEDG-2002-EVALUACIÓN DE ESPESORES
+                <i class="fas fa-file-contract text-3xl"></i> NOM-013-SEDG-2002-EVALUACIÓN DE ESPESORES
               </div>
             </div>
           </div>
@@ -131,7 +133,7 @@
     </section>
 
     <!-- SECCION SERVICIOS ESPECIALIZADOS -->
-    <section id="servicios" class="py-8 bg-gray-50">
+    <section id="servicios" class="py-8 bg-gray-50 reveal is-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
           <h2 class="text-orange-500 font-bold tracking-wide uppercase text-sm mb-2">Nuestras Soluciones</h2>
@@ -212,8 +214,45 @@
       </div>
     </section>
 
+    <!-- CERTIFICACIONES Y ACREDITACIONES -->
+     <section id="certificaciones" class="py-8 bg-blue-950 reveal is-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-orange-500 font-bold tracking-wide uppercase text-m mb-2">Certificaciones y Acreditaciones</h2>
+          <h3 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Garantía de Calidad y Cumplimiento</h3>
+          <p class="text-gray-600 text-lg">Nuestros dictámenes están respaldados por acreditaciones oficiales, asegurando
+            la validez y confiabilidad de nuestros servicios.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Certificación 1 -->
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="mb-4">
+              <i class="fa-solid fa-award text-5xl text-blue-600"></i>
+            </div>
+            <h4 class="font-bold text-lg mb-2 text-gray-900">NOM-004-SEDG-2004-DISEÑO Y CONSTRUCCIÓN DE GAS L.P.</h4>
+          </div>
+
+          <!-- Certificación 2 -->
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="mb-4">
+              <i class="fa-solid fa-award text-5xl text-blue-600"></i>
+            </div>
+            <h4 class="font-bold text-lg mb-2 text-gray-900">NOM-002-SECRE-2010-INSTALACIONES DE APROVECHAMIENTO DE GAS</h4>
+          </div>
+
+          <!-- Certificación 3 -->
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div class="mb-4">
+              <i class="fa-solid fa-award text-5xl text-blue-600"></i>
+            </div>
+            <h4 class="font-bold text-lg mb-2 text-gray-900">NOM-013-SEDG-2002-EVALUACIÓN DE ESPESORES</h4>
+
+
+     </section>
+
     <!-- PORQUE ELEGIRNOS -->
-    <section id="porqueElegirnos" class="py-8">
+    <section id="porqueElegirnos" class="py-8 reveal is-hidden">
       <div class="p-2 bg-gray-50 text-center">
         <h2 class="text-orange-500 font-bold tracking-wide uppercase text-sm mb-2 ">¿Por qué elegirnos?</h2>
         <h3 class="text-3xl md:text-4xl font-extrabold text-dvs-dark mb-4">No arriesgamos tu inversion con inspectores
@@ -266,7 +305,7 @@
       </div>
     </section>
 
-    <section id="proceso" class="py-20 bg-blue-950 text-white">
+    <section id="proceso" class="py-20 bg-blue-950 text-white reveal is-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-extrabold mb-16">Obtén tu dictamen en 3 sencillos pasos</h2>
 
@@ -306,7 +345,7 @@
     </section>
 
     <!-- CONTACTANOS -->
-    <section id="contacto" class="py-20 bg-gray-50">
+    <section id="contacto" class="py-20 bg-gray-50 reveal is-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-extrabold mb-6">¿Listo para tu dictamen?</h2>
         <p class="text-gray-600 mb-12">Contáctanos vía WhatsApp o llámanos para agendar tu inspección y obtener tu
@@ -319,11 +358,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-blue-950 py-12  ">
+    <footer class="bg-blue-950 text-white py-12 reveal is-hidden">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Columna 1 -->
         <div>
-          <h4 class="text-blue-950 text-xl font-bold mb-4 flex items-center gap-2">
+          <h4 class="text-white text-xl font-bold mb-4 flex items-center gap-2">
             DICTAGAS <span class="text-dvs-orange text-sm">Gas LP y Natural</span>
           </h4>
           <p class="text-sm mb-4">UNIDAD DE INSPECCION COMPROMETIDA CON LA SEGURIDAD Y EL CUMPLIMIENTO NORMATIVO EN
@@ -331,7 +370,7 @@
         </div>
         <!-- Columna 2 -->
         <div>
-          <h4 class="text-blue-950 font-bold mb-4">Enlaces Rápidos</h4>
+          <h4 class="text-white font-bold mb-4">Enlaces Rápidos</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="#servicios" class="hover:text-white transition">Servicios</a></li>
             <li><a href="#nosotros" class="hover:text-white transition">Acerca de nosotros</a></li>
@@ -341,7 +380,7 @@
         </div>
         <!-- Columna 3 -->
         <div>
-          <h4 class="text-blue-950 font-bold mb-4">Legal</h4>
+          <h4 class="text-white font-bold mb-4">Legal</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="#" class="hover:text-white transition">Aviso de Privacidad</a></li>
             <li><a href="#" class="hover:text-white transition">Términos y Condiciones</a></li>
