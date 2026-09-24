@@ -22,8 +22,27 @@ if (revealItems.length) {
     });
 }
 
-document.getElementById('mobile-menu')?.addEventListener('click', (event) => {
-    if (event.target.tagName === 'A') {
+document.querySelectorAll('#mobile-menu a').forEach((link) => {
+    link.addEventListener('click', (event) => {
+        const href = link.getAttribute('href');
+
+        if (!href || !href.startsWith('#')) return;
+
+        const targetId = href.substring(1);
+        const target = document.getElementById(targetId);
+
+        if (!target) return;
+
+        event.preventDefault();
+
+        const offset = 330; // ajuste del header
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+
+        window.scrollTo({
+            top,
+            behavior: 'smooth',
+        });
+
         document.querySelector('[commandfor="mobile-menu"]')?.click();
-    }
+    });
 });
